@@ -11,3 +11,9 @@ body {
 .back {
   background-color: red;
 }
+
+.photo {
+  transform: rotate(10deg);
+  margin-top: 5%;
+  margin-left: 49%;
+}
