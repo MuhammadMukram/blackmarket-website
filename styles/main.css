@@ -231,7 +231,7 @@ header p {
 #landing-section {
   position: absolute;
   top: 35%;
-  left: 5%;
+  margin-left: 15px;
   width: 35%;
 }
 
@@ -274,6 +274,12 @@ header p {
   margin-left: 40%;
   left: 100px;
   float: left;
+  
 }
-
 /* --- End of Landing Background Photo --- */
+
+/* About Section */
+.about-section p{
+  line-height: 2rem;
+}
+/* End of About Section */
