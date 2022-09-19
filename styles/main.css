@@ -192,6 +192,7 @@ header {
 }
 
 .nav_links {
+  color: var(--black);
   list-style: none;
   margin: 0;
 }
@@ -201,11 +202,13 @@ header p {
 }
 
 .nav_links li {
+  color: var(--black);
   display: inline-block;
   padding: 0px 20px;
 }
 
 .nav_links li a {
+  color: var(--black);
   transition: all 0.3s ease 0s;
 }
 
@@ -261,8 +264,7 @@ header p {
 
 #catalog-hyperlink {
   position: relative;
-  margin-left: 40px;
-  margin-top: 20px;
+  left: 40px;
   color: var(--green-light);
   padding: 10px 10px;
 }
@@ -270,11 +272,11 @@ header p {
 
 /* --- Landing Background Photo --- */
 #photo {
-  transform: rotate(10deg);
+  transform: rotate(15deg);
   margin-top: 8%;
-  margin-left: 40%;
-  left: 100px;
   float: left;
+  margin-left: 55%;
+  width: auto;
 }
 /* --- End of Landing Background Photo --- */
 
