@@ -77,3 +77,66 @@ html {
     line-height: 1.75;
     color: var(--textColor);
   }
+  
+/* Navbar */
+li,
+a,
+button {
+  font-family: var(--bodyFont);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 2rem;
+  background-color: white;
+  padding: 1rem 7rem;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav_links {
+  color: var(--black);
+  list-style: none;
+  margin: 0;
+}
+
+header p {
+  margin: auto;
+}
+
+.nav_links li {
+  color: var(--black);
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  color: var(--black);
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: var(--primary-color);
+}
+
+.contact-button {
+  padding: 9px 20px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.contact-button:hover {
+  background-color: var(--primary-700);
+}
+/* End of Navbar */
