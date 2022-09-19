@@ -2,7 +2,7 @@
 
 /* temp */
 body {
-  padding: 0 5rem;
+  /* padding: 0 5rem; */
 }
 
 /* temp */
@@ -20,7 +20,7 @@ body {
 html {
   font-size: 100%;
   scroll-behavior: smooth;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 /*16px*/
@@ -172,6 +172,10 @@ ul {
   box-shadow: var(--shadow-3);
 }
 
+.heroku {
+  padding: 0 7rem;
+}
+
 /* --- Navbar --- */
 li,
 a,
@@ -189,7 +193,7 @@ header {
   align-items: center;
   padding: 30px 2rem;
   background-color: white;
-  margin-top: 0;
+  padding: 1rem 7rem;
 }
 
 .logo {
@@ -280,12 +284,11 @@ header p {
   margin-left: 40%;
   left: 100px;
   float: left;
-  
 }
 /* --- End of Landing Background Photo --- */
 
 /* About Section */
-.about-section p{
+.about-section p {
   line-height: 2rem;
 }
 /* End of About Section */
