@@ -172,7 +172,7 @@ ul {
   box-shadow: var(--shadow-3);
 }
 
-/* navbar style */
+/* --- Navbar --- */
 li,
 a,
 button {
@@ -225,20 +225,10 @@ header p {
   background-color: var(--primary-700);
 }
 
-/* end navbar style */
+/* --- End of Navbar --- */
 
-/* background photo */
-#photo {
-  transform: rotate(10deg);
-  margin-top: 8%;
-  margin-left: 40%;
-  left: 100px;
-}
-
-/* end background photo */
-
+/* --- Landing Section */
 #landing-section {
-  margin: auto;
   position: absolute;
   top: 35%;
   left: 5%;
@@ -253,16 +243,19 @@ header p {
 }
 
 #landing-section h1 {
-  color: var(--green-dark);
+  color: var(--primary-500);
 }
 
 #join-button {
   margin-top: 20px;
-  color: var(--green-light);
-  padding: 10px 20px;
-  background-color: var(--green-dark);
+  padding: 15px 30px;
+  background-color: var(--primary-color);
   cursor: pointer;
   transition: all 0.3s ease 0s;
+}
+
+#join-button:hover {
+  background-color: var(--primary-700);
 }
 
 #catalog-hyperlink {
@@ -272,3 +265,15 @@ header p {
   color: var(--green-light);
   padding: 10px 10px;
 }
+/* --- End of Landing Section */
+
+/* --- Landing Background Photo --- */
+#photo {
+  transform: rotate(10deg);
+  margin-top: 8%;
+  margin-left: 40%;
+  left: 100px;
+  float: left;
+}
+
+/* --- End of Landing Background Photo --- */
