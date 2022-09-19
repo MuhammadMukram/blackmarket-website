@@ -2,7 +2,7 @@
 
 /* temp */
 body {
-  padding: 2rem 5rem;
+  padding: 0 5rem;
 }
 
 /* temp */
@@ -187,7 +187,13 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 2rem;
+  background-color: white;
+  margin-top: 0;
+}
+
+.logo {
+  margin-right: auto;
 }
 
 .nav_links {
