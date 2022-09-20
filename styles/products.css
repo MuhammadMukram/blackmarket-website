@@ -140,3 +140,50 @@ header p {
   background-color: var(--primary-700);
 }
 /* End of Navbar */
+
+/* Content */
+.products{
+  width: fit-content;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap : 2rem;
+}
+
+.teks_judul {
+  text-align: center;
+  grid-column: 1 / 4;
+}
+
+hr {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  background-color: var(--white);
+}
+
+.buy-button{
+  padding: 9px 20px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.products .judul_products{
+  margin-top: 15px;
+  width: fit-content;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 2px 2px #000000;
+}
+
+.products .gambar_products{
+  width: 300px;
+}
+
+.products .teks_products{
+  margin-top: -5px;
+  width: 300px;
+}
+/* End of Content */
