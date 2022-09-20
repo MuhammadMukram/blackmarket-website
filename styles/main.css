@@ -82,6 +82,7 @@ body {
 p {
   margin-bottom: 1.35rem;
   max-width: 40em;
+  font-size: 1.1rem;
 }
 
 h1,
@@ -163,7 +164,7 @@ ul {
   box-shadow: var(--shadow-3);
 }
 
-.heroku {
+.home {
   padding: 0 7rem;
 }
 
@@ -283,5 +284,14 @@ header p {
 /* About Section */
 .about-section p {
   line-height: 2rem;
+  width: 40%;
+  
+}
+
+#about-line {
+  right: 40%;
+  position: relative;
+  width: 20%;
+  background-color: var(--white);
 }
 /* End of About Section */
