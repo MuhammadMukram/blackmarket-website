@@ -269,6 +269,7 @@ header p {
   color: var(--green-light);
   padding: 10px 10px;
 }
+
 /* --- End of Landing Section */
 
 /* --- Landing Background Photo --- */
@@ -279,13 +280,14 @@ header p {
   margin-left: 55%;
   width: auto;
 }
+
 /* --- End of Landing Background Photo --- */
 
 /* About Section */
 .about-section p {
   line-height: 2rem;
   width: 40%;
-  
+
 }
 
 #about-line {
@@ -294,4 +296,50 @@ header p {
   width: 20%;
   background-color: var(--white);
 }
+
 /* End of About Section */
+
+/* Form */
+
+.boxform {
+  position: absolute;
+  top: 175%;
+  left: 60%;
+  text-align: center;
+  max-height: 100vh;
+  max-width: 360px;
+  padding: 7px;
+  background: rgba(255, 255, 255, 0.086);
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-image: initial;
+}
+
+.boxform label {
+  text-shadow: 2px 2px #000000;
+  font-size: 20px;
+  color: #E5E5E5;
+  font-family: "Oswald", sans-serif;
+}
+
+.boxform p {
+  font-size: 20px;
+  color: #E5E5E5;
+  font-family: "Oswald", sans-serif
+}
+
+.boxform input {
+  order: 2px solid #E5E5E5;
+  font-family: "Oswald", sans-serif;
+  width: 85%;
+  height: 40px;
+  color: #FFF;
+  background: transparent;
+  outline: 2;
+}
+
+.boxform hr {
+  position: relative;
+  background-color: var(--white);
+}
