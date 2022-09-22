@@ -62,13 +62,6 @@ html {
   --transition: 0.3s ease-in-out all;
   --max-width: 1120px;
   --fix-width: 600px;
-
-  /* box-shadow */
-  --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 body {
@@ -296,24 +289,32 @@ header p {
   width: 20%;
   background-color: var(--white);
 }
-
 /* End of About Section */
 
 /* Form */
+.form{
+  margin-top: 80px;
+  /* padding-bottom: 150px; */
+  /* margin-bottom: 160px; */
+}
+
+.content-form{
+  float: left;
+}
 
 .boxform {
-  position: absolute;
-  top: 175%;
-  left: 60%;
+  float: right;
+  /* position: absolute; */
   text-align: center;
   max-height: 100vh;
   max-width: 360px;
   padding: 7px;
-  background: rgba(255, 255, 255, 0.086);
+  background: var(--black);
   border-width: 1px;
   border-style: solid;
-  border-color: white;
+  border-color: var(--grey-500);
   border-image: initial;
+  border-radius: 5px;
 }
 
 .boxform label {
@@ -324,7 +325,7 @@ header p {
 }
 
 .boxform p {
-  font-size: 20px;
+  /* font-size: 20px; */
   color: #E5E5E5;
   font-family: "Oswald", sans-serif
 }
@@ -341,5 +342,34 @@ header p {
 
 .boxform hr {
   position: relative;
-  background-color: var(--white);
+  background-color: var(--grey-500);
 }
+
+.boxform button{
+  position: relative;
+  top: 10px;
+  left: 0px;
+  width: 85%;
+  height: 40px;
+  color: var(--grey-100);
+  background: var(--primary-500);
+  border: 0;
+  border-radius: 4px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  margin-bottom: 35px;
+}
+
+.boxform button:hover {
+  background: var(--primary-700);
+  box-shadow: 0 0 5px var(--primary-700), 0 0 25px var(--primary-700), 0 0 50px var(--primary-700), 0 0 100px var(--primary-700);
+  
+}
+
+#policy {
+  color: var(--grey-400);
+}
+/* End of Form */
