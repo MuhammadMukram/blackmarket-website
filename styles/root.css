@@ -141,7 +141,6 @@ header {
 }
 
 /* Navbar (All - berlaku Umum) */
-/* Navbar */
 .container {
     width: 40vw;
     border: 5px solid var(--primary-500);
@@ -216,9 +215,7 @@ header {
 .contact-button:hover {
     background-color: var(--primary-700);
 }
-
 /* --- End of Navbar --- */
-
 
 /* Footer */
 .row {
