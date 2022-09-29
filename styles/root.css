@@ -141,13 +141,6 @@ header {
 }
 
 /* Navbar (All - berlaku Umum) */
-.container {
-    width: 40vw;
-    border: 5px solid var(--primary-500);
-    border-radius: var(--borderRadius);
-    max-width: var(--max-width);
-}
-
 .img {
     width: 100%;
     display: block;
@@ -165,7 +158,6 @@ header {
     padding: 0.375rem 0.75rem;
     box-shadow: var(--shadow-1);
     transform: var(--transition);
-    text-transform: capitalize;
 }
 
 .btn:hover {
