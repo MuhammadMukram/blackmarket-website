@@ -12,38 +12,57 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/main.css" />
+  <style>
+    a{
+      transition: 2s;
+  }
+  a:hover{
+      background-color: rgb(255, 204, 146);
+      padding: 2px 10px;
+      border-radius: 8px;
+      color:white;
+  }
+  </style>
 </head>
 
 <body>
   <!-- Navigation Bar -->
-  <header>
+  <header style="position: fixed; z-index:1000000;width:100vmax">
     <a href="main.html" class="logo"><img src="assets/logo.png" alt="" width="55%"></a>
-    <nav>
-      <ul class="nav_links">
+    <nav style="margin-left: -200px;">
+      <ul class="nav_links" >
         <li>TOTAL ALUSISTA DIANGKUT : <a href="#">27042328</a></li>
         &nbsp;|&nbsp;
-        <li><a href="#">TENTANG</a></li>
+        <li><a href="#HOME">HOME</a></li>
+        <li><a href="#tentang">ABOUT</a></li>
+        <li><a href="#KAKI">CONTACT</a></li>
+        
+       
       </ul>
     </nav>
     <a href="mailto:alusista-paman@union.co" class="contact"><button class="contact-button">KONTAK</button></a>
   </header>
 
   <!-- Landing Section -->
-  <div class="home">
+  <div class="home" id="HOME">
     <section id="landing-section">
       <h1>Ingin menjadi diktator?</h1>
       <p>
         Anda mampu menjangkau banyak distributor terpercaya dari seluruh dunia
         dengan layanan paman!
       </p>
-      <a href="#"><button id="join-button">BERGABUNG</button></a>
+      <a href="#BERGABUNG"><button id="join-button">BERGABUNG</button></a>
       <a href="products.html" id="catalog-hyperlink">Katalog</a>
     </section>
-    <img id="photo" src="/assets/collagepicture.jpg" alt="collagephoto" width="750" height="750" />
+    <img id="photo" src="assets/collagepicture.jpg" alt="collagephoto" width="750" height="750" />
     <div class="about-section" >
-      <h1>Tentang Kita</h1>
-      <hr id="about-line">
-      <p>
+      <div  style="padding-top:1000px; height:1600px" >
+      
+      
+      <hr  id="about-line" >
+      <h1 id="tentang">Tentang Kita</h1>
+      <p >
+       
         Alusista Paman merupakan organisasi yang berdiri sejak tahun
         1999 yang bergerak dalam mendistribusikan alat pertahanan untuk
         berbagai pihak ketiga yang bergerak dalam rangka membantu konsumen
@@ -61,6 +80,7 @@
         Layanan kami tanpa batas!
       </p>
     </div>
+  </div>
 
     <!-- Form Bergabung -->
     <div class="form">
@@ -94,6 +114,34 @@
     <!-- Form Kontak -->
 
     <!-- Footer -->
+    <footer class="footer" id="KAKI">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          
+          
+          </div>
+        </div>
+      </div>
+   </footer>
   </div>
 </body>
 
