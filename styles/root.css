@@ -183,7 +183,7 @@ header {
 .nav-links li {
     color: var(--black);
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 7px;
 }
 
 .nav-links li a {
@@ -192,20 +192,28 @@ header {
 }
 
 .nav-links li a:hover {
-    color: var(--primary-color);
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #0f172a;
+    border-radius: 5px;
 }
 
 .contact-button {
     padding: 9px 20px;
-    background-color: var(--primary-color);
     border: none;
-    border-radius: 50px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    margin-left: 15px;
 }
 
 .contact-button:hover {
     background-color: var(--primary-700);
+    scale: 1.05;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    
 }
 
 /* --- End of Navbar --- */
@@ -252,7 +260,7 @@ header {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: var(--red-dark);
     height: 2px;
     box-sizing: border-box;
     width: 50px;

@@ -11,8 +11,6 @@
 }
 
 #landing-section p {
-  /* margin: auto; */
-  /* text-align: center; */
   width: 60%;
   font-size: 1.4rem;
 }
@@ -148,5 +146,4 @@
 #policy {
   color: var(--grey-400);
 }
-
 /* End of Form */

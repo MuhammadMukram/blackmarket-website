@@ -26,9 +26,15 @@ hr {
   padding: 9px 20px;
   background-color: var(--primary-color);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+}
+
+.buy-button:hover {
+  /* Make cool hover effect */
+  background-color: var(--primary-700);
+  border: 1px #fff solid;
 }
 
 .products .judul_products {
@@ -47,5 +53,4 @@ hr {
   margin-top: -5px;
   width: 300px;
 }
-
 /* End of Content */
