@@ -3,12 +3,12 @@
 @import url("../styles/root.css");
 
 /* Content */
-.products{
+.products {
   width: fit-content;
   margin: auto;
   display: grid;
   grid-template-columns: auto auto;
-  gap : 2rem;
+  gap: 2rem;
 }
 
 .teks_judul {
@@ -22,7 +22,7 @@ hr {
   background-color: var(--white);
 }
 
-.buy-button{
+.buy-button {
   padding: 9px 20px;
   background-color: var(--primary-color);
   border: none;
@@ -31,7 +31,7 @@ hr {
   transition: all 0.3s ease 0s;
 }
 
-.products .judul_products{
+.products .judul_products {
   margin-top: 15px;
   width: fit-content;
   font-size: 30px;
@@ -39,12 +39,13 @@ hr {
   text-shadow: 2px 2px #000000;
 }
 
-.products .gambar_products{
+.products .gambar_products {
   width: 300px;
 }
 
-.products .teks_products{
+.products .teks_products {
   margin-top: -5px;
   width: 300px;
 }
+
 /* End of Content */
