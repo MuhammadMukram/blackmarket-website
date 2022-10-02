@@ -12,19 +12,43 @@
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <header style="position: fixed; z-index:1;width:100vmax">
-    <a href="main.html" class="nav-logo"><img src="assets/logo.png" alt="" width="55%"></a>
-    <nav style="margin-left: -200px;">
-      <ul class="nav-links">
-        <li>TOTAL ALUSISTA DIANGKUT : <a href="#">27042928</a></li>
-        &nbsp;|&nbsp;
-        <li><a href="main.html#Home">HOME</a></li>
-        <li><a href="main.html#about-line">TENTANG</a></li>
-      </ul>
-    </nav>
-    <a href="mailto:alusista-paman@union.co" class="contact"><button class="contact-button">KONTAK</button></a>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Alutsista Paman"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Forum</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Marketplace
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Pembelian</a></li>
+              <li><a class="dropdown-item" href="#">Hubungi Kami</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Total Alutsista Diangkut : 424059179</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Content -->
   <div class="tampilan">
@@ -110,7 +134,7 @@
 </body>
 
 <!-- Footer -->
-<footer class="footer content" id="KAKI">
+<!-- <footer class="footer content" id="KAKI">
   <div class="container">
     <div class="row">
       <div class="footer-col">
@@ -132,6 +156,6 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 </html>
