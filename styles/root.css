@@ -46,7 +46,7 @@
     --transition: 0.3s ease-in-out all;
     --max-width: 1120px;
     --fix-width: 600px;
-    --block-margin: 8vw 3vw;
+    --block-margin: 8vw 5vw;
 }
 
 
@@ -67,15 +67,16 @@ html {
 body {
     background: var(--backgroundColor);
     font-family:  var(--bodyFont);
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.75;
     color: var(--textColor);
 }
 
 p {
-    margin-bottom: 1.35rem;
+    margin-bottom: calc(16px + 0.5vmin);
     max-width: 40em;
-    font-size: 1.1rem;
+    font-size: calc(15px + 1vmin);
+    letter-spacing: 0.4px;
 }
 
 h1,
@@ -88,26 +89,6 @@ h5 {
     font-family: "Oswald", serif;
     font-weight: 400;
     text-transform: capitalize;
-}
-
-h1 {
-    font-size: 3.052rem;
-}
-
-h2 {
-    font-size: 2.441rem;
-}
-
-h3 {
-    font-size: 1.953rem;
-}
-
-h4 {
-    font-size: 1.563rem;
-}
-
-h5 {
-    font-size: 1.25rem;
 }
 
 ul {
@@ -131,7 +112,13 @@ button {
 }
 
 .navbar-brand img {
-    width: 65%;
+    width: 55%;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand img {
+        width: 100%;
+    }
 }
 
 /* Footer */

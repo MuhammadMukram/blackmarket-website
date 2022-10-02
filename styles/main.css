@@ -5,18 +5,17 @@
 /* --- Landing Section */
 .landing-section {
   display: flex;
-  margin: var(--block-margin)
+  margin: var(--block-margin);
 }
 
 .landing-about {
+  position: relative;
   margin-top: 10vw;
-  width: 40%;
   float: left;
 }
 
 .landing-section p {
-  width: 60%;
-  font-size: 1.4rem;
+  width: 75%;
 }
 
 .landing-section h1 {
@@ -24,7 +23,7 @@
 }
 
 .btn-join{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 15px 30px;
   background-color: var(--primary-color);
   cursor: pointer;
@@ -42,28 +41,25 @@
   padding: 10px 10px;
 }
 
-/* Make media responsive for thumbnail */
-@media screen and (max-width: 768px) {
-
-  .landing-about {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  .landing-section p {
-    width: 100%;
-  }
-}
-
 .thumbnail {
-  transform: rotate(12deg);
-  /* Make reflection from this image */
-  -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(250, 250, 250, 0.1)));
-
-  width: 50%;
+  width: 60%;
+  height: 100%;
   float: right;
-  position: relative;
+  -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
+
+.thumbnail:hover {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: all 0.3s ease 0s;
+}
+
+.thumbnail:not(:hover) {
+  opacity: 0.6;
+  transform: rotate(12deg);
+  transition: all 0.3s ease 0s;
+}
+
 
 /* About Section */
 .about-section {
@@ -74,9 +70,15 @@
 .slide {
   margin: var(--block-margin);
   position: relative;
-  width: 60vw;
+  width: 90vw;
 }
 
+/* Make a responsive media */
+/* @media screen and (max-width: 768px) {
+  .thumbnail {
+    display: none;
+  }
+} */
 
 /* Form 
 
@@ -159,3 +161,28 @@
 
 
 End of Form */
+
+
+/* Media Responsive */
+@media screen and (max-width: 1024px) {
+  .landing-section, .about-section, .slide {
+    flex-direction: column;
+    margin: 5vmin auto;
+  }
+
+  .landing-about {
+    margin: 20px 0 50px 0; 
+  }
+
+  .thumbnail {
+    width: 80%;
+    height: 100%;
+    float: none;
+  }
+
+  .thumbnail:not(:hover) {
+    opacity: 0.6;
+    transform: rotate(0deg);
+    transition: all 0.3s ease 0s;
+  }
+}
