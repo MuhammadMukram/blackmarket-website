@@ -3,23 +3,27 @@
 @import url("../styles/root.css");
 
 /* --- Landing Section */
-#landing-section {
-  position: absolute;
-  top: 35%;
-  margin-left: 15px;
-  width: 35%;
+.landing-section {
+  display: flex;
+  margin: var(--block-margin)
 }
 
-#landing-section p {
+.landing-about {
+  margin-top: 10vw;
+  width: 40%;
+  float: left;
+}
+
+.landing-section p {
   width: 60%;
   font-size: 1.4rem;
 }
 
-#landing-section h1 {
+.landing-section h1 {
   color: var(--primary-500);
 }
 
-#join-button {
+.btn-join{
   margin-top: 20px;
   padding: 15px 30px;
   background-color: var(--primary-color);
@@ -27,49 +31,55 @@
   transition: all 0.3s ease 0s;
 }
 
-#join-button:hover {
+.btn-join:hover {
   background-color: var(--primary-700);
 }
 
-#catalog-hyperlink {
+.catalog-hyperlink {
   position: relative;
   left: 40px;
   color: var(--green-light);
   padding: 10px 10px;
 }
 
-/* --- End of Landing Section */
+/* Make media responsive for thumbnail */
+@media screen and (max-width: 768px) {
 
-/* --- Landing Background Photo --- */
-#photo {
-  transform: rotate(15deg);
-  margin-top: 8%;
-  float: left;
-  margin-left: 55%;
-  width: auto;
+  .landing-about {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .landing-section p {
+    width: 100%;
+  }
 }
-/* --- End of Landing Background Photo --- */
+
+.thumbnail {
+  transform: rotate(12deg);
+  /* Make reflection from this image */
+  -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(250, 250, 250, 0.1)));
+
+  width: 50%;
+  float: right;
+  position: relative;
+}
 
 /* About Section */
-.about-section p {
-  line-height: 2rem;
-  width: 40%;
-}
-
-.about-section h1 {
-  padding: 0;
-  margin: 0;
-}
-
-#about-line {
-  right: 40%;
+.about-section {
+  margin: var(--block-margin);
   position: relative;
-  width: 20%;
-  background-color: var(--white);
 }
-/* End of About Section */
 
-/* Form */
+.slide {
+  margin: var(--block-margin);
+  position: relative;
+  width: 60vw;
+}
+
+
+/* Form 
+
 .form {
   margin-top: 80px;
 }
@@ -100,7 +110,7 @@
 }
 
 .boxform p {
-  /* font-size: 20px; */
+  font-size: 20px;
   color: #E5E5E5;
   font-family: "Oswald", sans-serif
 }
@@ -146,4 +156,6 @@
 #policy {
   color: var(--grey-400);
 }
-/* End of Form */
+
+
+End of Form */
