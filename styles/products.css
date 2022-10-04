@@ -53,4 +53,34 @@ hr {
   margin-top: -5px;
   width: 300px;
 }
+
 /* End of Content */
+
+/* -New Content- */
+.card img {
+  border-radius: 6% !important;
+}
+
+.card-body {
+  color: black;
+}
+
+.card-hr {
+  border: 5px solid rgb(0, 0, 0);
+  opacity: 1;
+  width: 30%;
+}
+
+.card-body .btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.card-title {
+  font-size: 28px;
+}
+
+.card-text {
+  margin-top: 17px;
+  font-size: 18px;
+}
