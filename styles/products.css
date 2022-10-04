@@ -57,6 +57,11 @@ hr {
 /* End of Content */
 
 /* -New Content- */
+.card {
+  background-color: var(--grey-50);
+}
+
+
 .card img {
   border-radius: 6% !important;
 }
@@ -66,7 +71,7 @@ hr {
 }
 
 .card-hr {
-  border: 5px solid rgb(0, 0, 0);
+  border: 5px solid var(--primary-900);
   opacity: 1;
   width: 30%;
 }
@@ -74,6 +79,7 @@ hr {
 .card-body .btn {
   background-color: var(--primary-color);
   color: var(--white);
+  margin-bottom: 10px;
 }
 
 .card-title {
