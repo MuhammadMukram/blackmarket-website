@@ -113,6 +113,13 @@ hr {
 }
 
 /* cart */
+#cart-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border: none;
+  background: none;
+}
+
 .cart {
   position: fixed;
   top: 0;
@@ -122,6 +129,12 @@ hr {
   padding: 20px;
   background: var(--primary-900);
   box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  z-index: 99;
+  display: none;
+}
+
+.cart.active {
+  display: block;
 }
 
 .cart-box {
