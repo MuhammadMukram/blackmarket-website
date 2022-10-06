@@ -77,8 +77,13 @@ hr {
 }
 
 .card:hover {
-  transform: scale(.95);
-  transition: 0.3s;
+  scale : 0.95;
+  transition: all 0.3s;
+}
+
+.card:not(:hover) {
+  scale : 1;
+  transition: all 0.3;
 }
 
 .card-body {
@@ -190,10 +195,6 @@ hr {
   font-size: 2rem;
   cursor: pointer;
 }
-.detail-box {
-  display: grid;
-  row-gap: 0.5rem;
-}
 
 .cart-product-title {
   font-size: 1rem;
@@ -207,7 +208,7 @@ hr {
 .cart-quantity {
   border: 1px solid black;
   outline-color: var(--primary-color);
-  width: 4rem;
+  width: 7rem;
   text-align: center;
   font-size: 1rem;
 }
