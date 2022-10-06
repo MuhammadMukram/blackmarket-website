@@ -1,7 +1,7 @@
 let cartIcon = document.getElementById("cart-icon");
 let cart = document.querySelector(".cart");
 let closeCart = document.getElementById("close-cart");
-let removeItem = document.getElementById("cart-remove");
+// let removeItem = document.getElementById("cart-remove");
 
 cartIcon.onclick = () => {
   cart.classList.add("active");
@@ -24,9 +24,9 @@ if (document.readyState == "loading") {
 function ready() {
   var removeCartItemButtons = document.getElementsByClassName("cart-remove");
 
-  console.log(removeCartItemButtons);
+//   console.log(removeCartItemButtons);
 
-  console.log("ready");
+//   console.log("ready");
   for (var i = 0; i < removeCartItemButtons.length; i++) {
     var button = removeCartItemButtons[i];
     button.addEventListener("click", removeCartItem);
@@ -42,6 +42,12 @@ function ready() {
   for (var i = 0; i < addCart.length; i++) {
     var button = addCart[i];
     button.addEventListener("click", addToCartClicked);
+  }
+
+  var purchaseButton = document.getElementsByClassName("order-now");
+  for (var i = 0; i < purchaseButton.length; i++) {
+    var button = purchaseButton[i];
+    button.addEventListener("click", purchaseClicked);
   }
 }
 
@@ -59,13 +65,13 @@ function removeCartItem(event) {
   var priceRemoved = totalPrice - totalTemp;
   console.log(priceRemoved);
 
-  document.getElementsByClassName("total-price")[0].innerText = priceRemoved + " BTC";
+  document.getElementsByClassName("total-price")[0].innerText =
+    priceRemoved + " BTC";
 
   buttonClicked.parentElement.parentElement.remove();
   //   if (typeof cartContent != "undefined" && cartContent != null) {
   //     updateTotal();
   //   }
-  
 }
 
 function quantityChanged(event) {
@@ -95,37 +101,24 @@ function addToCartClicked(event) {
 
   var newTotalPrice = totalPrice + price;
   console.log(price);
-  document.getElementsByClassName("total-price")[0].innerText = newTotalPrice + " BTC";
+  document.getElementsByClassName("total-price")[0].innerText =
+    newTotalPrice + " BTC";
 
-//   updateTotal();
+  //   updateTotal();
 
-//   var addedIntoCart = (function () {
-//     var isThere = false;
-//     return function() {
-//         if (!isThere) {
-//             isThere = true;
-//             addProductToCart(title, price, itemImg, shopItem);
-//             updateTotal();
-//         }
-//     }
-//   })
-
+  // var addedIntoCart = (function () {
+  //   var isThere = false;
+  //   return function() {
+  //       if (!isThere) {
+  //           isThere = true;
+  //           addProductToCart(title, price, itemImg, shopItem);
+  //           updateTotal();
+  //       }
+  //   }
+  // })
 }
 
 function addProductToCart(title, price, itemImg, shopItem) {
-  //   var title = shopItem.getElementsByClassName("card-title")[0].innerText;
-  //   var price = shopItem.getElementsByClassName("price")[0].innerText;
-  //   var itemImg = shopItem.getElementsByClassName("card-img-top")[0].src;
-
-  //   var cartShopBox = document.createElement("div");
-  //   const shopBox = cartShopBox.classList;
-
-  //   var cartItems = document.getElementsByClassName("card-content")[0];
-  //   shopBox.add("card-box");
-  //   shopBox.add("d-flex");
-  //   shopBox.add("flex-column");
-
-  //   console.log(cartItems);
   var arrayOfCartItems = [];
   var cartShopBox = document.createElement("div");
   cartShopBox.classList.add("cart-box");
@@ -134,7 +127,7 @@ function addProductToCart(title, price, itemImg, shopItem) {
 
   var cartItems = document.getElementsByClassName("card-body")[0];
   var cartItemsNames = cartItems.getElementsByClassName("card-title");
-  
+
   for (let i = 0; i < cartItemsNames.length; i++) {
     if (cartItemsNames[i].innerText == title) {
       alert("Maaf, item yang anda tambahkan sudah ada di keranjang!");
@@ -167,29 +160,68 @@ function addProductToCart(title, price, itemImg, shopItem) {
     .getElementsByClassName("cart-quantity")[0]
     .addEventListener("change", quantityChanged);
 
-  // arrayOfCartItems.append(cartShopBox);
   cartContent.append(cartShopBox);
 }
 
-// function updateTotal() {
-//   console.log("update total");
-//   let total = 0;
-//   var cartContent = document.getElementsByClassName("cart-content")[0];
-//   var cartBoxes = cartContent.getElementsByClassName("cart-box");
+function updateTotal() {
+  console.log("update total");
+  let total = 0;
+  var cartContent = document.getElementsByClassName("cart-content")[0];
+  var cartBoxes = cartContent.getElementsByClassName("cart-box");
 
-//   for (var i = 0; i < cartBoxes.length; i++) {
-//     var cartBox = cartBoxes[i];
-//     var priceElement = cartBox.getElementsByClassName("cart-price")[0];
-//     console.log(priceElement);
-//     var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
-//     console.log(quantityElement);
-//     var price = parseFloat(priceElement.innerText.replace(" ", "BTC"));
-//     var quantity = quantityElement.value;
-//     console.log(price);
-//     console.log(quantity);
-//     total += price * quantity;
-//     total = Math.round(total * 100) / 100;
-//     document.getElementsByClassName("total-price")[0].innerText =
-//       total + " BTC";
-//   }
-// }
+  for (var i = 0; i < cartBoxes.length; i++) {
+    var cartBox = cartBoxes[i];
+    var priceElement = cartBox.getElementsByClassName("cart-price")[0];
+    console.log(priceElement);
+    var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
+    console.log(quantityElement);
+    var price = parseFloat(priceElement.innerText.replace(" ", "BTC"));
+    var quantity = quantityElement.value;
+    console.log(price);
+    console.log(quantity);
+    total += price * quantity;
+    total = Math.round(total * 100) / 100;
+    document.getElementsByClassName("total-price")[0].innerText =
+      total + " BTC";
+  }
+}
+
+async function purchaseClicked() {
+  var orderList = document.getElementsByClassName("cart-content")[0];
+  var orderListTitle = orderList.getElementsByClassName("cart-product-title");
+  var orderListQuantity = orderList.getElementsByClassName("cart-quantity");
+  let orderListTitleArray = [];
+  let orderListQuantityArray = [];
+
+  for (let index = 0; index < orderListTitle.length; index++) {
+    orderListTitleArray[index] = orderListTitle[index].innerText;
+  }
+
+  for (let index = 0; index < orderListQuantity.length; index++) {
+    orderListQuantityArray[index] = orderListQuantity[index].value;
+  }
+
+  var orderListArray = [];
+  for (let index = 0; index < orderListTitleArray.length; index++) {
+    orderListArray[index] = [
+      orderListTitleArray[index],
+      orderListQuantityArray[index],
+    ];
+  }
+
+  console.log(orderListArray);
+
+  let csvContent = "data:text/csv;charset=utf-8,";
+
+  orderListArray.forEach(function (rowArray) {
+    let row = rowArray.join(",");
+    csvContent += row + "\r\n";
+  });
+
+  var encodedUri = encodeURI(csvContent);
+  var link = document.createElement("a");
+  link.setAttribute("href", encodedUri);
+  link.setAttribute("download", "my_data.csv");
+  document.body.appendChild(link);
+  link.click();
+}
