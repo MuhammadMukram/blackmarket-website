@@ -92,10 +92,14 @@ hr {
   width: 30%;
 }
 
+.card-body .d-flex {
+  padding: 0;
+}
+
 .card-body .btn {
   background-color: var(--primary-color);
   color: var(--white);
-  margin-bottom: 10px;
+  /* margin-left: 10px; */
 }
 
 .card-title {
