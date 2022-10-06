@@ -32,7 +32,6 @@ hr {
 }
 
 .buy-button:hover {
-  /* Make cool hover effect */
   background-color: var(--primary-700);
   border: 1px #fff solid;
 }
@@ -53,7 +52,6 @@ hr {
   margin-top: -5px;
   width: 300px;
 }
-
 /* End of Content */
 
 /* -New Content- */
@@ -112,7 +110,7 @@ hr {
   font-size: 18px;
 }
 
-/* cart */
+/* --- CART --- */
 #cart-icon {
   font-size: 1.5rem;
   color: var(--primary-color);
