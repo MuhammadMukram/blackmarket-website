@@ -71,6 +71,14 @@ hr {
 .card img {
   border-radius: 6% !important;
   margin-bottom: -10px;
+  height: 12rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(.95);
+  transition: 0.3s;
 }
 
 .card-body {
@@ -92,6 +100,7 @@ hr {
 
 .card-title {
   font-size: 28px;
+  height: 3rem;
 }
 
 .card-text {
