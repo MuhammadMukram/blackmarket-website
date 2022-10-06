@@ -32,7 +32,6 @@ hr {
 }
 
 .buy-button:hover {
-  /* Make cool hover effect */
   background-color: var(--primary-700);
   border: 1px #fff solid;
 }
@@ -53,7 +52,6 @@ hr {
   margin-top: -5px;
   width: 300px;
 }
-
 /* End of Content */
 
 /* -New Content- */
@@ -92,10 +90,14 @@ hr {
   width: 30%;
 }
 
+.card-body .d-flex {
+  padding: 0;
+}
+
 .card-body .btn {
   background-color: var(--primary-color);
   color: var(--white);
-  margin-bottom: 10px;
+  /* margin-left: 10px; */
 }
 
 .card-title {
@@ -107,3 +109,110 @@ hr {
   margin-top: 17px;
   font-size: 18px;
 }
+
+/* --- CART --- */
+#cart-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border: none;
+  background: none;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  min-height: 100vh;
+  padding: 20px;
+  background: var(--primary-900);
+  box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  z-index: 99;
+  display: none;
+}
+
+.cart.active {
+  display: block;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--primary-color);
+}
+
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price {
+  margin-left: 0.5rem;
+}
+
+.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background: var(--primary-700);
+}
+
+#close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cart-product-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.cart-price {
+  font-weight: 500;
+} 
+
+.cart-quantity {
+  border: 1px solid black;
+  outline-color: var(--primary-color);
+  width: 4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove {
+  font-size: 24px;
+  color: var(--primary-700);
+  cursor: pointer;
+}
+

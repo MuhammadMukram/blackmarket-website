@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
   <link rel="stylesheet" href="styles/products.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <title>Alusista Paman-Katalog</title>
 </head>
 
@@ -30,7 +32,7 @@
             <a class="nav-link" href="#">Tentang</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Forum</a>
+            <a class="nav-link" href="#" id="buttontest">Forum</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -48,10 +50,43 @@
               </li>
             </ul>
           </li>
+          <li class="mt-2">
+            <button class='bx bx-cart my-auto' id="cart-icon"></button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- Cart -->
+  <div class="cart">
+    <p class="h2 text-center pt-3">Your Cart</p>
+    <div class="cart-content">
+      <div class="cart-box">
+        <img src="assets/himars-cat.jpg" alt="" class="cart-img">
+        <div class="detail-box container">
+          <div class="row">
+            <div class="col-10 my-auto">
+              <div class="cart-product-title">Himars Cat</div>
+              <div class="cart-price">5 BTC</div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <div class="col-2 my-auto">
+              <i class='bx bxs-trash-alt cart-remove'></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="total">
+      <div class="total-title">Total</div>
+      <div class="total-price">0 BTC</div>
+    </div>
+
+    <button type="button" class="btn-buy">Buy Now</button>
+    <i class='bx bx-x' id="close-cart"></i>
+  </div>
+
 
   <!-- Content -->
 
@@ -151,7 +186,10 @@
             <h5 class="card-title">F15 Strike Eagle</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn">&nbsp;+&nbsp;</a>
+            <div class="d-flex">
+              <p class="h6 my-auto">5 BTC</p>
+              <a href="#" class="btn ms-auto">&nbsp;+&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
@@ -163,7 +201,10 @@
             <h5 class="card-title">KF51 Panther</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn">&nbsp;+&nbsp;</a>
+            <div class="d-flex">
+              <p class="h6 my-auto">5 BTC</p>
+              <a href="#" class="btn ms-auto">&nbsp;+&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
@@ -175,7 +216,10 @@
             <h5 class="card-title">AH-64 Apache</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn">&nbsp;+&nbsp;</a>
+            <div class="d-flex">
+              <p class="h6 my-auto">5 BTC</p>
+              <a href="#" class="btn ms-auto">&nbsp;+&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
@@ -189,7 +233,10 @@
             <h5 class="card-title">STS GAZ 233114 Tigr-M 2011</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn">&nbsp;+&nbsp;</a>
+            <div class="d-flex">
+              <p class="h6 my-auto">5 BTC</p>
+              <a href="#" class="btn ms-auto">&nbsp;+&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
@@ -201,7 +248,10 @@
             <h5 class="card-title">F-35</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn">&nbsp;+&nbsp;</a>
+            <div class="d-flex">
+              <p class="h6 my-auto">5 BTC</p>
+              <a href="#" class="btn ms-auto">&nbsp;+&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
@@ -213,7 +263,10 @@
             <h5 class="card-title">Himars M142</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn">&nbsp;+&nbsp;</a>
+            <div class="d-flex">
+              <p class="h6 my-auto">5 BTC</p>
+              <a href="#" class="btn ms-auto">&nbsp;+&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
@@ -235,7 +288,10 @@
             <h5 class="card-title">Pistol</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn">&nbsp;+&nbsp;</a>
+            <div class="d-flex">
+              <p class="h6 my-auto">5 BTC</p>
+              <a href="#" class="btn ms-auto">&nbsp;+&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
@@ -247,7 +303,10 @@
             <h5 class="card-title">Assault Rifle</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn">&nbsp;+&nbsp;</a>
+            <div class="d-flex">
+              <p class="h6 my-auto">5 BTC</p>
+              <a href="#" class="btn ms-auto">&nbsp;+&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
@@ -259,17 +318,20 @@
             <h5 class="card-title">Sniper Rifle</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn">&nbsp;+&nbsp;</a>
+            <div class="d-flex">
+              <p class="h6 my-auto">5 BTC</p>
+              <a href="#" class="btn ms-auto">&nbsp;+&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
 </body>
+<script src="js/main.js"></script>
 <!-- Footer -->
 <!-- <footer class="footer content" id="KAKI">
   <div class="container">
