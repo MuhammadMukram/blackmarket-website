@@ -9,7 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
   <link rel="stylesheet" href="styles/products.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="styles/root.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <title>Alusista Paman-Katalog</title>
 </head>
@@ -17,7 +18,7 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
-    <div class="container" >
+    <div class="container">
       <a class="navbar-brand" href="main.html"><img src="assets/logo.png" alt="Alutsista Paman" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,103 +60,22 @@
   </nav>
 
   <!-- Cart -->
-  <div class="cart" >
+  <div class="cart">
     <p class="h2 text-center pt-3">Your Cart</p>
     <div class="cart-content">
-      
+
     </div>
     <div class="total">
-    <div class="total-title">Total</div>
-    <div class="total-price">0 BTC</div>
+      <div class="total-title">Total</div>
+      <div class="total-price">0 BTC</div>
+    </div>
+
+  <a href="form.html">    <button type="button" class="btn-buy order-now">Pesan Sekarang</button></a>
+  <!-- <button type="button" class="btn-buy order-now">Pesan Sekarang</button> -->
+    <i class='bx bx-x' id="close-cart"></i>
   </div>
 
-  <a href="form.html"><button type="button" class="btn-buy order-now">Pesan Sekarang</button></a>
-  <!-- <button type="button" class="btn-buy order-now">Pesan Sekarang</button> -->
-<i class='bx bx-x' id="close-cart"></i>
-</div>
-              
-
-    <!-- Content -->
-
-  <!-- <div class="tampilan">
-    <div class="products">
-      <h1 class="teks_judul">Kendaraan</h1>
-      <div class="jet">
-        <img src="assets/jet.jpg" alt="Gambar Jet" class="gambar_products" />
-        <p class="judul_products">F-16 Fighting Falcon</p>
-        <p class="teks_products">
-          F-16 Fighting Falcon adalah pesawat tempur multi-peran yang ringkas. Hal ini sangat bermanuver dan telah
-          membuktikan dirinya dalam pertempuran udara-ke-udara dan serangan udara-ke-permukaan. Ini menyediakan sistem
-          senjata berkinerja tinggi yang relatif murah untuk Amerika Serikat dan negara sekutu.
-        </p>
-        <a href="#" class="contact">
-          <button class="buy-button">422K BTC</button></a>
-      </div>
-
-      <div class="tank">
-        <img src="assets/tank.jpg" alt="Gambar Tank" class="gambar_products" />
-        <p class="judul_products">KF51 Panther</p>
-        <p class="teks_products">
-          Panther memenuhi kemampuan inti "mendominasi dan menghancurkan". Dengan Rheinmetall Future Gun System yang
-          terdiri dari meriam 130 mm, sistem penanganan amunisi yang sepenuhnya otomatis, dan opsi persenjataan tambahan
-          dari amunisi HERO 120.
-        </p>
-        <a href="#" class="contact">
-          <button class="buy-button">352K BTC</button></a>
-      </div>
-
-      <div class="heli">
-        <img src="assets/heli.jpg" alt="Gambar Heli" class="gambar_products" />
-        <p class="judul_products">AH-64 Apache</p>
-        <p class="teks_products">
-          AH-64E Apache adalah helikopter tempur multi-peran paling canggih yang dibuat oleh Ameriak Serikat.
-        </p>
-        <a href="#" class="contact">
-          <button class="buy-button">312K BTC</button></a>
-      </div>
-      <hr />
-      <h1 class="teks_judul">Senjata Personil</h1>
-      <div class="pistol">
-        <img src="assets/Pistol.jpg" alt="Gambar Pistol" class="gambar_products" />
-        <p class="judul_products">UZI</p>
-        <p class="teks_products">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-          tempore totam provident pariatur, eos molestiae suscipit, earum
-          quisquam quas rerum eligendi ducimus. Facere, cum ducimus rem
-          voluptatibus eaque doloremque rerum.
-        </p>
-        <a href="#" class="contact">
-          <button class="buy-button">20 BTC</button></a>
-      </div>
-
-      <div class="assault">
-        <img src="assets/Assault-Rifle.jpeg" alt="Gambar Assault-Rifle" class="gambar_products" />
-        <p class="judul_products">M4A1</p>
-        <p class="teks_products">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          eveniet dolor molestias facere placeat rerum quasi, minus explicabo,
-          provident similique atque eligendi recusandae, laboriosam natus qui
-          dolorem aliquid officiis! Provident?
-        </p>
-        <a href="#" class="contact">
-          <button class="buy-button">18 BTC</button></a>
-      </div>
-
-      <div class="sniper">
-        <img src="assets/Sniper-Rifle.jpeg" alt="Gambar Sniper-Rifle" class="gambar_products" />
-        <p class="judul_products">M110</p>
-        <p class="teks_products">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut libero,
-          sed fugit, corporis sapiente fuga ad suscipit quibusdam optio, sit
-          voluptatem architecto. Ullam saepe possimus cum! Accusantium quae
-          ratione rem.
-        </p>
-        <a href="#" class="contact">
-          <button class="buy-button">32 BTC</button></a>
-      </div>
-    </div>
-  </div> -->
-  <div class="container" style="width: fit-content; margin: auto;">
+  <div class="container mb-5" style="width: fit-content; margin: auto;">
     <div class="row">
       <div class="col">
         <br>
@@ -192,8 +112,8 @@
             <h5 class="card-title">KF-51</h5>
             <p class="card-text">
               Berat : 59 Ton<br>
-              Standar Kru :	3-4<br>          
-              Senjata Utama : Rh-130 L52 130 mm</p>
+              Standar Kru : 3-4<br>
+              Senjata Utama : Rh-130 L52 130 mm <br><br></p>
             <div class="d-flex">
               <p class="h6 my-auto price">6700 BTC</p>
               <a href="#" class="btn ms-auto add-cart">&nbsp;+&nbsp;</a>
@@ -208,10 +128,10 @@
             <hr class="card-hr">
             <h5 class="card-title">APACHE AH-64</h5>
             <p class="card-text">
-              Standar Kru	: 2<br>
-              Panjang	: 48.16 ft. (14.68 m)<br>
-              Tinggi	: 15.49 ft. (4.72 m)<br>
-             Diameter Rotor	: 48 ft. (14.63 m)
+              Standar Kru : 2<br>
+              Panjang : 48.16 ft. (14.68 m)<br>
+              Tinggi : 15.49 ft. (4.72 m)<br>
+              Diameter Rotor : 48 ft. (14.63 m)
             </p>
             <div class="d-flex">
               <p class="h6 my-auto price">7200 BTC</p>
@@ -231,8 +151,8 @@
             <p class="card-text">
               Berat : 7.200Kg<br>
               Panjang : 18.6 ft. (5.67m)<br>
-              Kru : 2 - 9 <br>
-              Material Lapis Baja : SPM-1: 5 mm<br>
+              Kru : 2 - 9<br>
+              Material Lapis Baja : SPM-1: 5 mm<br><br><br>
             </p>
             <div class="d-flex">
               <p class="h6 my-auto price">1200 BTC</p>
@@ -251,7 +171,7 @@
               Laju maksimum: Mach 1.67 <br>
               Jangkauan: 1,200 nmi on internal fuel<br>
               Radius tempur: 610 nmi<br>
-              Rudal: Air-to-air: AIM-120 AMRAAM
+              Rudal: Air-to-air: AIM-120 AMRAAM <br><br><br>
             </p>
             <div class="d-flex">
               <p class="h6 my-auto price">34700 BTC</p>
@@ -295,9 +215,11 @@
           <div class="card-body">
             <img src="/assets/Pistol.jpg" class="card-img-top p-0 m-0" alt="gambar jet">
             <hr class="card-hr">
-            <h5 class="card-title">Pistol</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Glock 17</h5>
+            <p class="card-text">
+              Panjang : 32 mm<br>
+              Height : 139 mm<br>
+              Jarak Penglihatan : 165 mm<br>
             <div class="d-flex">
               <p class="h6 my-auto price">8 BTC</p>
               <a href="#" class="btn ms-auto add-cart">&nbsp;+&nbsp;</a>
@@ -310,9 +232,11 @@
           <div class="card-body">
             <img src="/assets/Assault-Rifle.jpeg" class="card-img-top p-0 m-0" alt="gambar jet">
             <hr class="card-hr">
-            <h5 class="card-title">Assault Rifle</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Assault Rifle M416</h5>
+            <p class="card-text">
+              Tipe Peluru : 5.56 mm<br>
+              Maksimal Peluru : 30<br>
+              Mode Tembak : Semi/Full-auto<br></p>
             <div class="d-flex">
               <p class="h6 my-auto price">12 BTC</p>
               <a href="#" class="btn ms-auto add-cart">&nbsp;+&nbsp;</a>
@@ -326,8 +250,10 @@
             <img src="/assets/Sniper-Rifle.jpeg" class="card-img-top p-0 m-0" alt="gambar jet">
             <hr class="card-hr">
             <h5 class="card-title">Sniper Rifle</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text">
+              Massa : 13.5-14.8 kg<br>
+              Panjang Barel : 51-74 cm<br>
+              Diameter : 12.7 inch<br></p>
             <div class="d-flex">
               <p class="h6 my-auto price">15 BTC</p>
               <a href="#" class="btn ms-auto add-cart">&nbsp;+&nbsp;</a>
@@ -337,34 +263,75 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-  </body>
-  <script src="js/main.js"></script>
-<!-- Footer -->
-<!-- <footer class="footer content" id="KAKI">
-  <div class="container">
+
+  <!-- footer -->
+  <div class="container2 mt-3">
     <div class="row">
-      <div class="footer-col">
-        <h4>Komunitas</h4>
-        <ul>
-          <li><a href="#">Layanan kami</a></li>
-          <li><a href="#">Kebijakan Layanan</a></li>
-          <li><a href="#">Program kerja</a></li>
+      <div class="col-sm">
+        <hr class="straightline">
+      </div>
+    </div>
+    <div class="row" style="margin-left:8vh;">
+      <div class="col-sm">
+        <h3>ALUTSISTA PAMAN</h3>
+      </div>
+      <div class="col-sm">
+        <h5>MORE ALUTSISTA PAMAN</h5>
+        <ul style="list-style:none;">
+          <li class="listtext">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="listtext">
+            <a class="nav-link" href="#">Media</a>
+          </li>
+          <li class="listtext">
+            <a class="nav-link" href="#">Programs</a>
+          </li>
+          <li class="listtext">
+            <a class="nav-link" href="#">Spaces</a>
+          </li>
+          <li class="listtext">
+            <a class="nav-link" href="products.html">Catalog</a>
+          </li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>Bantuan</h4>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Pengembalian</a></li>
-          <li><a href="#">Pembayaran</a></li>
-        </ul>
+      <div class="col-sm">
+        <h5>ABOUT ALUTSISTA PAMAN</h3>
+          <ul style="list-style:none;">
+            <li class="listtext">
+              <a class="nav-link" href="#">Partner With Us</a>
+            </li>
+            <li class="listtext">
+              <a class="nav-link" href="#">Jobs</a>
+            </li>
+            <li class="listtext">
+              <a class="nav-link" href="#">Terms & Conditions</a>
+            </li>
+            <li class="listtext">
+              <a class="nav-link" href="#">Cookie Statement</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <p class="copyrighttext">A Military Defence And Technology
+          company.</p>
+        <p class="copyrighttext2">Copyright © 2022—2022, ALUTSISTA PAMAN web. Made with Ardhi, Sofyan, Erwin, Mukram,
+          And Arya.</p>
       </div>
     </div>
   </div>
-</footer> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+</body>
 
 </html>
